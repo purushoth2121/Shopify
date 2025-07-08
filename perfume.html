@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="ideas.js" defer></script>
+
+    <!--Awsome icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+    .perfume a {
+        text-decoration: none;
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1>Shopifyte</h1>
+    </header>
+
+    <nav>
+        <a href="/Shopify/index.html">Home</a>
+        <a href="/Shopify/collection.html">Collections</a>
+        <a href="/Shopify/about.html">About</a>
+        <a href="/Shopify/contact.html">Contact</a>
+        <a onclick="show()">Cart</a>
+    </nav>
+
+    <div class="section">
+        <h1 style="text-align: center; padding: 20px;">Perfume</h1>
+        <div class="container">
+            <div class="product">
+                <img src="/Shopify/perfume.img/perfume1.jpeg" alt="perfume" />
+                <h3>Wild Perfume</h3>
+                <p>$99.99</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/Shopify/perfume.img/perfume2.jpeg" alt="perfume" />
+                <h3>Perfume</h3>
+                <p>$99.99</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/Shopify/perfume.img/perfume3.jpeg" alt="perfume" />
+                <h3>Classic Perfume</h3>
+                <p>$99.99</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/Shopify/perfume.img/perfume4.jpeg" alt="perfume" />
+                <h3>Rose Perfume</h3>
+                <p>$99.99</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/Shopify/perfume.img/perfume5.jpeg" alt="perfume" />
+                <h3>Rose Perfume</h3>
+                <p>$99.99</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/Shopify/perfume.img/perfume6.jpeg" alt="perfume" />
+                <h3>Perfume</h3>
+                <p>$99.99</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/Shopify/perfume.img/perfume7.jpeg" alt="perfume" />
+                <h3>Perfume</h3>
+                <p>$99.99</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/Shopify/perfume.img/prslide1.jpeg" alt="perfume" />
+                <h3>Perfume</h3>
+                <p>$99.99</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/Shopify/perfume.img/prslide2.jpeg" alt="perfume" />
+                <h3>Perfume</h3>
+                <p>$99.99</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/Shopify/perfume.img/prslide3.jpeg" alt="perfume" />
+                <h3>Perfume</h3>
+                <p>$99.99</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/Shopify/perfume.img/prslide4.jpeg" alt="perfume" />
+                <h3>Perfume</h3>
+                <p>$99.99</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/Shopify/perfume.img/prslide15.avif" alt=" woman perfume" />
+                <h3>Perfume</h3>
+                <p>$99.99</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/Shopify/perfume.img/prslide10.jpg" alt="perfume" />
+                <h3>Perfume</h3>
+                <p>$99.99</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/Shopify/perfume.img/prslid6.jpeg" alt="perfume" />
+                <h3>Perfume</h3>
+                <p>$99.99</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/Shopify/perfume.img/prslide19.jpeg" alt="perfume" />
+                <h3>Perfume</h3>
+                <p>$99.99</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/Shopify/perfume.img/prslide12.webp" alt="perfume" />
+                <h3>Perfume</h3>
+                <p>$99.99</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="cart" id="mycart">
+        <p id="clso" style="text-align: right;">
+            <i class="fa-solid fa-xmark" onclick="show1()"></i>
+        </p>
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p><strong>Total:</strong> $<span id="cart-total">0.00</span></p>
+        <div class="checkout">
+            <h3>Checkout</h3>
+            <form onsubmit="checkout(event)">
+                <label for="name">Name:</label><br />
+                <input type="text" id="name" required /><br />
+                <label for="address">Address:</label><br />
+                <input type="text" id="address" required /><br /><br />
+                <button class="cart-btn" onclick="show1()" type="submit">Place Order</button>
+            </form>
+            <p id="confirmation" style="color: green;"></p>
+        </div>
+    </div>
+
+    <footer>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-telegram"></i>
+        <p>@2025 Developed by Purushothaman</p>
+    </footer>
+</body>
+
+</html>
