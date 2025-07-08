@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="ideas.js" defer></script>
+
+    <!--Awsome icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Shopifyte</h1>
+    </header>
+
+     <nav>
+        <a href="/Shopify/index.html">Home</a>
+        <a href="/Shopify/collection.html">Collections</a>
+        <a href="/Shopify/about.html">About</a>
+        <a href="/Shopify/contact.html">Contact</a>
+        <a onclick="show()">Cart</a>
+    </nav>
+
+    <div class="section">
+        <h1 style="text-align: center; padding: 20px;">Electronics</h1>
+        <div class="container">
+            <div class="product">
+                <img src="/Shopify/elecronic.img/camera.webp" alt="camera" />
+                <h3>camera</h3>
+                <p>$199.99</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product">
+                <img src="/Shopify/elecronic.img/camsidebar.jpg" alt="camera" />
+                <h3>Camsider</h3>
+                <p>$199.99</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product">
+                <img src="/Shopify/elecronic.img/camsidebar1.webp" alt="camera" />
+                <h3>camera</h3>
+                <p>$199.99</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product">
+                <img src="/Shopify/elecronic.img/eleslidebar.jpg" alt="camera" />
+                <h3>Camsider</h3>
+                <p>$199.99</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product">
+                <img src="/Shopify/elecronic.img/keyboard.jpg" alt="keyboard" />
+                <h3>keyboard</h3>
+                <p>$199.99</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product">
+                <img src="/Shopify/elecronic.img/laptop.jpeg" alt="laptop"></img>
+                <h3>HP laptop</h3>
+                <p>Buy $190</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/Shopify/elecronic.img/powerbank.png" alt="powerbank"></img>
+                <h3>powerbank</h3>
+                <p>Buy $90</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="product">
+                <img src="/Shopify/elecronic.img/prinsidebar.webp" alt="Printer"></img>
+                <h3>Printer</h3>
+                <p>Buy $110</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product">
+                <img src="/Shopify/elecronic.img/printer.webp" alt="printer"></img>
+                <h3>Printer</h3>
+                <p>Buy $220</p>
+                <button>Buy Now</button>
+
+            </div>
+            <div class="product">
+                <img src="/Shopify/elecronic.img/tvsidebar.webp" alt:width="120px" height="120px"></img>
+                <h3>Android Tv</h3>
+                <p>Buy $12</p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="cart" id="mycart">
+        <p id="clso" style="text-align: right;">
+            <i class="fa-solid fa-xmark" onclick="show1()"></i>
+        </p>
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p><strong>Total:</strong> $<span id="cart-total">0.00</span></p>
+        <div class="checkout">
+            <h3>Checkout</h3>
+            <form onsubmit="checkout(event)">
+                <label for="name">Name:</label><br />
+                <input type="text" id="name" required /><br />
+                <label for="address">Address:</label><br />
+                <input type="text" id="address" required /><br /><br />
+                <button class="cart-btn" onclick="show1()" type="submit">Place Order</button>
+            </form>
+            <p id="confirmation" style="color: green;"></p>
+        </div>
+    </div>
+    <!--footer-->
+    <footer>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-telegram"></i>
+        <p>@2025 Developed by Purushoth</p>
+    </footer>
+</body>
+
+</html>
